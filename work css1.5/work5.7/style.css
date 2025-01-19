@@ -1,0 +1,27 @@
+.container {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    width: 300px; /* Set a width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.item {
+    height: 50px; /* Set a fixed height for each item */
+    display: flex; /*To center the number inside each item*/
+    justify-content: center; /*To center the number inside each item horizontally*/
+    align-items: center;  /*To center the number inside each item vertically*/
+    color: white; /* Text color */
+    font-weight: bold;
+}
+
+/* Color each item */
+.item:nth-child(1) { background-color: #00b0f0; } /* Blue */
+.item:nth-child(2) { background-color: #00b050; } /* Green */
+.item:nth-child(3) { background-color: #904098; } /* Purple */
+.item:nth-child(4) { background-color: #ffff00; } /* Yellow */
+.item:nth-child(5) { background-color: #ff9900; } /* Orange */
+.item:nth-child(6) { background-color: #ff0000; } /* Red */
+.item:nth-child(7) { background-color: #ff9900; } /* Orange */
+.item:nth-child(8) { background-color: #00b050; } /* Green */
+.item:nth-child(9) { background-color: #00b0f0; } /* Blue */
+.item:nth-child(10) { background-color: #00b050; } /* Green */

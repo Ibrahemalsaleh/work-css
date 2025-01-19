@@ -1,0 +1,24 @@
+body {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.item {
+    background-color: #3498db; /* Blue background */
+    color: white; /* White text */
+    padding: 15px 25px; /* Padding inside each item */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0;
+    text-align: center; /* Center text within the items */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}

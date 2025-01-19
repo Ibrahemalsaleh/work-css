@@ -1,0 +1,40 @@
+body {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 300px; /* تحديد ارتفاع للحاوية لرؤية تأثير المحاذاة */
+    border: 3px solid gold;
+    padding: 10px;
+    gap: 10px;
+    align-items: flex-start; /* محاذاة افتراضية للعناصر في بداية الحاوية */
+}
+
+.item {
+    width: 50px;
+    background-color: #3498db; /* لون أزرق للعناصر */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 1px solid black;
+}
+
+#item1 {
+    height: 100px;
+    background-color: lightgray;
+}
+
+#item2, #item3, #item4 {
+    height: 200px;
+    background-color: #2980b9; /* لون أزرق داكن للعناصر */
+}
+
+#item8 {
+    align-self: flex-end; /* محاذاة العنصر لنهاية الحاوية */
+    height: 50px;
+    background-color: lightgreen;
+}

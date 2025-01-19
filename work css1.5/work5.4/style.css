@@ -1,0 +1,22 @@
+body {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex; /* Enable Flexbox on the container */
+    background-color: #34495e; /* Dark blue background for the container */
+    padding: 20px;
+    gap: 20px; /* adds spacing between the flex items */
+}
+
+.box {
+    background-color: #bdc3c7; /* Light gray background for the boxes */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    color: #2c3e50; /* Dark text color */
+    flex: 1; /* Key: Makes boxes grow to fill available space equally */
+    min-height: 100px; /* Ensure a minimum height for all boxes */
+    display: flex; /* Enable flexbox on the box */
+    align-items: center; /* Vertically center the text inside the box */
+}

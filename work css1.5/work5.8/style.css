@@ -1,0 +1,31 @@
+.container {
+    display: flex; /* Enable flexbox */
+    width: 500px; /* Set a width for the container */
+    margin: 20px auto; /* Center the container horizontally */
+    border: 1px solid black; /* Add a border to visualize the container */
+}
+
+.item {
+    height: 100px; /* Set a fixed height for each item */
+    display: flex; /*To center the number inside each item*/
+    justify-content: center; /*To center the number inside each item horizontally*/
+    align-items: center;  /*To center the number inside each item vertically*/
+    color: white; /* Text color */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.item1 {
+    background-color: #00b0f0; /* Blue */
+    flex: 2; /* Takes up 2/3 of available space */
+}
+
+.item2 {
+    background-color: #00b0f0; /* Blue */
+    flex: 1; /* Takes up 1/3 of available space */
+}
+
+.emoji{
+    font-size: 1.5em;
+    margin-left: 10px; /* add some spacing*/
+}

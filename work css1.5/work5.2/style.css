@@ -1,0 +1,40 @@
+body {
+    margin: 0; /* إزالة الهوامش الافتراضية للجسم */
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #f0f0f0; /* لون خلفية الشريط (رمادي فاتح) */
+    padding: 10px; /* مساحة داخلية للشريط */
+    display: flex; /* تفعيل Flexbox على الشريط */
+    justify-content: space-between; /* توزيع العناصر على أطراف الشريط */
+    align-items: center; /* محاذاة عمودية للعناصر في المنتصف */
+    border-bottom: 1px solid #ddd; /* إضافة خط سفلي للشريط */
+}
+
+.navbar-title {
+    font-weight: bold;
+    color: red; /* لون العنوان أحمر */
+}
+
+.navbar ul {
+    list-style: none; /* إزالة النقاط من القائمة */
+    margin: 0;
+    padding: 0;
+    display: flex; /* تفعيل Flexbox على القائمة */
+}
+
+.navbar li {
+    margin-left: 20px; /* مسافة بين عناصر القائمة */
+}
+
+.navbar a {
+    text-decoration: none; /* إزالة الخط تحت الروابط */
+    color: #333; /* لون الروابط (رمادي داكن) */
+    padding: 5px;
+}
+
+.navbar a:hover{
+    background-color: #ddd; /* لون خلفية الروابط عند التمرير */
+    border-radius: 5px; /* حواف دائرية للروابط عند التمرير */
+}

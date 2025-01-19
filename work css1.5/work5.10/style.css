@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default body margins */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+    padding-right: 20px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    flex: 1; /* Allow main to take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    text-align: center; /* Center content within the container */
+}
+
+.app-icon {
+    width: 100px; /* Adjust icon size as needed */
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    display: block;
+    width: 300px;
+    margin: 10px auto; /* Center inputs */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}

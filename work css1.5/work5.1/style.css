@@ -1,0 +1,24 @@
+body {
+    margin: 20px; /* هامش بسيط لجعل العناصر لا تلتصق بحواف الصفحة */
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex; /* تفعيل Flexbox على الحاوية */
+    /* الخصائص التالية اختيارية ولكنها مفيدة للتحكم في التوزيع */
+    justify-content: space-between; /* توزيع العناصر مع مسافة بينها */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    background-color: rgb(128, 0, 128);
+    padding: 20px;
+}
+
+.box {
+    width: 200px; /* عرض ثابت للمربعات */
+    height: 200px; /* ارتفاع ثابت للمربعات */
+    background-color: white; /* لون خلفية المربعات أبيض */
+    border: 1px solid black; /* إضافة حدود سوداء للمربعات */
+    display: flex; /* لجعل النص داخل المربع في المنتصف */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
