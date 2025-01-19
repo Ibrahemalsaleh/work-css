@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#image-container {
+    width: 600px; /* عرض الحاوية */
+    height: 400px; /* ارتفاع الحاوية */
+    margin: 20px auto; /* توسيط الحاوية */
+    border: 1px solid #ccc; /* إضافة حد مرئي للحاوية */
+    position: relative; /* مهم جدًا: لجعل هذه الحاوية مرجعًا لوضع الصور المطلق */
+}
+
+.image {
+    width: 200px; /* عرض ثابت للصور */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    position: absolute; /* وضع مطلق */
+    border: 3px solid white; /* حد أبيض للصور */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ظل لإضافة عمق */
+    transition: transform 0.3s ease; /* إضافة انتقال سلس للدوران */
+}
+
+#image1 {
+    top: 20px; /* موضع الصورة من الأعلى */
+    left: 20px; /* موضع الصورة من اليسار */
+    z-index: 4; /* ترتيب التكديس: أعلى من جميع الصور الأخرى */
+    transform: rotate(-5deg); /* تدوير بسيط للصورة */
+}
+
+#image1:hover {
+    transform: scale(1.1) rotate(0deg); /* تكبير الصورة عند التمرير عليها وإلغاء التدوير */
+    z-index: 5; /* رفع قيمة z-index عند التمرير لتظهر فوق باقي الصور بشكل كامل */
+}
+
+#image2 {
+    top: 50px;
+    left: 150px;
+    z-index: 3;
+    transform: rotate(5deg);
+}
+
+#image3 {
+    top: 150px;
+    left: 50px;
+    z-index: 2;
+    transform: rotate(10deg);
+}
+
+#image4 {
+    top: 180px;
+    left: 180px;
+    z-index: 1;
+    transform: rotate(-10deg);
+}

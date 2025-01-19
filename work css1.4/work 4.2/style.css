@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.red {
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.green {
+    background-color: green;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.blue {
+    background-color: blue;
+    top: 60px;
+    left: 60px;
+    z-index: 3;
+}
+
+.yellow {
+    background-color: yellow;
+    top: 80px;
+    left: 80px;
+    z-index: 4;
+}

@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+#container{
+    width: 90%;
+    margin: 20px auto;
+}
+
+#fixed-image-layout {
+    display: flex; /* Essential for side-by-side layout */
+    align-items: flex-start; /* Align items to the top */
+}
+
+#fixed-image {
+    position: fixed; /* Make the image fixed */
+    top: 20px;       /* Distance from the top of the viewport */
+    left: 20px;      /* Distance from the left of the viewport */
+    width: 150px;     /* Set a fixed width */
+    height: auto;    /* Maintain aspect ratio */
+    border: 1px solid black;
+}
+
+#main-content {
+    margin-left: 170px; /* Crucial: Prevent content overlap (150px + 20px) */
+    padding: 20px;
+    flex-grow: 1; /* Allows the content to expand and fill available space */
+}

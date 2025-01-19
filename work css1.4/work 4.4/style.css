@@ -1,0 +1,50 @@
+#colored-boxes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 320px;
+    margin: 20px auto;
+}
+
+.colored-box {
+    width: 50px;
+    height: 50px;
+    background-color: #9b59b6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* إضافة انتقال سلس للحركة */
+}
+
+.colored-box:nth-child(2n) {
+    background-color: #3498db;
+}
+
+.colored-box:nth-child(3n) {
+    background-color: #f1c40f;
+}
+
+.colored-box:nth-child(4n) {
+    background-color: #e74c3c;
+}
+
+/* حركة الصندوق رقم 1 */
+#box1 {
+    position: relative; /* مهم لجعل الحركة نسبية */
+    animation: moveBox 2s linear infinite alternate; /* تشغيل الحركة */
+}
+
+@keyframes moveBox {
+    0% {
+        transform: translate(0, 0); /* الموضع الأصلي */
+    }
+    50% {
+        transform: translate(20px, 10px); /* تحريك بمقدار 20 بكسل يمينًا و 10 بكسل لأسفل */
+    }
+     100% {
+        transform: translate(0, 0); /* العودة للموضع الاصلي */
+    }
+}
