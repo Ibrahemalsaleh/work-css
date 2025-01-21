@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عمودين متساويين */
+    grid-gap: 10px;
+    width: 90%; /* عرض الحاوية */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item {
+    position: relative; /* ضروري لتحديد موضع النص بالنسبة للصورة */
+    overflow: hidden; /* لمنع تجاوز الصورة لحدود العنصر */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block; /* لإزالة أي مسافات إضافية تحت الصورة */
+    border-radius: 8px; /* تدوير زوايا الصورة */
+    transition: transform 0.3s ease; /* إضافة تأثير عند التمرير */
+}
+
+.item:hover img {
+    transform: scale(1.05); /* تكبير الصورة قليلاً عند التمرير */
+}
+
+.label {
+    position: absolute; /* تحديد موضع النص المطلق داخل العنصر */
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية سوداء شفافة للنص */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* استجابة الشاشة */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* عمود واحد على الشاشات الصغيرة */
+    }
+}

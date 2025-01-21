@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* أعمدة متجاوبة */
+    grid-gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* استخدام Flexbox داخل البطاقة */
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* تحديد ارتفاع ثابت للصور */
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* توزيع المساحة بين العنوان والزر */
+    flex-grow: 1; /* للسماح للمحتوى بالتمدد وملء المساحة المتبقية */
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-content button {
+    background-color: #2ecc71; /* لون أخضر للزر */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* محاذاة الزر إلى بداية الحاوية */
+}
+
+/* استجابة الشاشة */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* تعديل عرض الأعمدة على الشاشات الصغيرة */
+    }
+}

@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    width: 300px; /* تحديد عرض الحاوية */
+    height: 300px; /* تحديد ارتفاع الحاوية */
+    position: relative; /* مهم لتحديد موضع العناصر المتداخلة */
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    opacity: 0.7; /* شفافية المربعات */
+    position: absolute; /* تحديد موضع العناصر المطلق */
+    border-radius: 8px;
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.7); /* أحمر شفاف */
+    top: 0;
+    left: 0;
+    z-index: 1; /* ترتيب الظهور (الأعلى) */
+}
+
+.green {
+    background-color: rgba(0, 255, 0, 0.7); /* أخضر شفاف */
+    top: 50px;
+    left: 50px;
+    z-index: 2; /* ترتيب الظهور (في المنتصف) */
+}
+
+.blue {
+    background-color: rgba(0, 0, 255, 0.7); /* أزرق شفاف */
+    top: 100px;
+    left: 100px;
+    z-index: 3; /* ترتيب الظهور (الأسفل) */
+}

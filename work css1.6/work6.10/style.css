@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* ثلاثة صفوف: صورة، محتوى، نقاط */
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* لمنع تجاوز الصورة لحدود البطاقة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0; /* لإزالة الهامش العلوي الافتراضي للعنوان */
+    margin-bottom: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.dots span {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.dots span.active {
+    background-color: #e74c3c; /* لون أحمر للنقطة النشطة */
+}

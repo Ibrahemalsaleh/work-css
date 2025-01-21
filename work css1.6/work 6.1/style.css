@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif; /* اختيار خط افتراضي */
+    display: flex; /* لمركزة الحاوية عموديا */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* لون خلفية الصفحة */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* إنشاء 4 أعمدة متساوية */
+    grid-gap: 10px; /* مسافة بين العناصر */
+    width: 80%; /* عرض الحاوية بالنسبة لعرض الشاشة */
+    max-width: 800px; /* حد أقصى لعرض الحاوية */
+    background-color: #fff; /* لون خلفية الحاوية */
+    padding: 20px; /* مساحة داخلية للحاوية */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل خفيف للحاوية */
+    border-radius: 8px; /* تدوير زوايا الحاوية */
+}
+
+.item {
+    background-color: #3498db; /* لون المربعات (أزرق) */
+    color: white; /* لون النص داخل المربعات */
+    text-align: center; /* توسيط النص أفقياً */
+    padding: 20px; /* مساحة داخلية للمربعات */
+    display: flex; /* لمركزة النص عموديا */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* حجم الخط داخل المربعات */
+    border-radius: 5px; /* تدوير زوايا المربعات */
+}
+
+/* تحسين الاستجابة على الشاشات الصغيرة */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* عمودين فقط على الشاشات الصغيرة */
+    }
+}

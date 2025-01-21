@@ -1,0 +1,55 @@
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ثلاثة أعمدة متساوية */
+    grid-template-rows: auto auto; /* صفين */
+    grid-gap: 10px;
+    width: 90%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.main-content {
+    grid-column: 1 / 4; /* يمتد على جميع الأعمدة */
+    background-color: #eee; /* لون رمادي فاتح */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px; /* مسافة أسفل العنصر الرئيسي */
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* عمودين متساويين داخل المجموعة */
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: #ddd; /* لون رمادي أغمق قليلاً */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* استجابة الشاشة */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* عمود واحد على الشاشات الصغيرة */
+    }
+    .group{
+        grid-template-columns: 1fr;
+    }
+}

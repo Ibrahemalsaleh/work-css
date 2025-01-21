@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    margin: 20px; /* هامش حول الصفحة */
+    background-color: #f0f0f0; /* لون خلفية الصفحة */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* ثلاثة أعمدة */
+    grid-template-rows: auto auto 1fr auto; /* أربعة صفوف */
+    grid-gap: 10px;
+    max-width: 1200px; /* عرض الحاوية */
+    margin: 0 auto; /* توسيط الحاوية */
+    background-color: #fff; /* لون خلفية الحاوية */
+    padding: 20px; /* مساحة داخلية للحاوية */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل خفيف للحاوية */
+    border-radius: 8px; /* تدوير زوايا الحاوية */
+}
+
+header {
+    background-color: #f1c40f; /* أصفر */
+    grid-column: 1 / 4; /* يمتد على كامل العرض */
+}
+
+aside {
+    background-color: #e74c3c; /* أحمر */
+    grid-row: 2 / 4; /* يمتد من الصف الثاني حتى الرابع */
+}
+
+nav {
+    background-color: #3498db; /* أزرق */
+    grid-column: 3;
+    grid-row: 2;
+}
+
+article {
+    background-color: #ecf0f1; /* رمادي فاتح */
+    grid-column: 2;
+    grid-row: 2 / 4; /* يمتد من الصف الثاني حتى الرابع */
+}
+
+footer {
+    background-color: #34495e; /* أزرق غامق */
+    color: white;
+    grid-column: 1 / 4; /* يمتد على كامل العرض */
+}
+
+/* تنسيقات عامة للعناصر */
+header, aside, nav, article, footer {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* استجابة الشاشة */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* عمود واحد */
+        grid-template-rows: auto auto auto auto auto; /* صفوف متعددة */
+    }
+
+    aside {
+        grid-column: 1;
+        grid-row: 3; /* يوضع تحت nav */
+    }
+    nav{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    article {
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
